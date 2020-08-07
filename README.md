@@ -1,3 +1,3 @@
 # Portfolio
 
-https://rockvan.github.io/Portfolio/
+https://rockvan.github.io/portfolio/
