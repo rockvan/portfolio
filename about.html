@@ -4,55 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body class="content">
-    <h1>
-        About Richard Palo
-    </h1>
-    <hr>
-   
-    <div class="sidenav">
-        <a href="index.html">Portfolio</a></li>
-        <a class="active" href="about.html">About me</a></li>
-        <a href="contact.html">Contact me</a></li>
-      </div>
-
-    <br>
-
-    <h3>
-        Full Stack Web Developer, TSR, Nurse
-    </h3>
-    <br>
-    <p>
-        Hi, I am an aspiring web developer, who wants to create an online business and make educational content.
-        <br>
-        <br>
-        I have worked as a private nurse, technical support representative and an Operations Manager in a Meat processing plant.
-        <br>
-        <br>
-        I am currently improving my skills as a web developer in a nonprofit organization, Global Integrity.
-        <br>
-        <br>
-        Thank you for checking my portfolio page, and be sure to visit my contact page so that you can send me a message!
-    </p>
-    <br>
-    <br>
+<body>
+<!--------------------------------Navbar--------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/3176/3176388.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">  About Me</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+<!--------------------------------End Navabar-------------------------------->
+ <br>
+<!--------------------------------About-------------------------------->
+    <section id="About">
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+              <h1 class="display-4">Full Stack Web Developer, TSR, Nurse</h1>
+              <hr>
+              <p class="lead">
+                Hi, I am an aspiring web developer, who wants to create an online business and make educational content.
+                <br>
+                <br>
+                I have worked as a private nurse, technical support representative and an Operations Manager in a Meat processing plant.
+                <br>
+                <br>
+                I am currently improving my skills as a web developer in a nonprofit organization, Global Integrity.
+                <br>
+                <br>
+                Thank you for checking my portfolio page, and be sure to visit my contact page so that you can send me a message!
+            </p>
+            </div>
+          </div>
+    </section>
     
-    <img src="https://miro.medium.com/max/1575/1*26XS_ika9w4pg18715Mo1g.jpeg" 
-           alt="Quotes">
-           
-    <footer>
-        <p>
-            Author: Richard Palo
-        </p>
-        <p>
-          <a href="mailto:rockvan21@gmail.com">
-            rockvan21@gmail.com
-          </a>
-        </p>
-    </footer>
-
-</body>
+<!--------------------------------End About-------------------------------->
+<br>
+<!--------------------------------Footer-------------------------------->
+    <section id="footer">
+        <footer>
+            <div class="contaider-fluid">
+                <div class="row align-items-center card navbar-dark bg-dark ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lets Talk</h5>
+                        <p>Wanna get in touch or talk about a project?</p>
+                        <p>Feel free to contact me via email at <a href="mailto:rockvan21@gmail.com" class="badge badge-light"> rockvan21@gmail.com</a></p>
+                        <p>or drop a line in the form at the <a href="contact.html" class="badge badge-light"> Contact page</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+<!--------------------------------End Footer-------------------------------->    
+ </body>
 </html>

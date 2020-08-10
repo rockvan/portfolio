@@ -4,46 +4,109 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfolio</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body class="content">
-    <h1> 
-        Richard Palo's Portfolio
-      </h1>
-      <hr>
-      
-      <div class="sidenav">
-        <a class="active" href="index.html">Portfolio</a></li>
-        <a href="about.html">About me</a></li>
-        <a href="contact.html">Contact me</a></li>
+<body>
+<!--------------------------------Navbar--------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/3176/3176388.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">  Richard Palo's portfolio</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+<!--------------------------------End Navabar-------------------------------->
+<br>
+<!--------------------------------Hero Section-------------------------------->
+  <section id="hero">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-4">
+          <h1>
+            Web Developer
+          </h1>
+          <p>
+            Here's what i have learned so far.
+          </p>
+          <ul class="list-group list-group-horizontal-sm">
+            <h4><span class="badge badge-pill badge-info">HTML</span></h4>
+            <h4><span class="badge badge-pill badge-info">CSS</span></h4>
+          </ul>
+        </div>
+        <div class="col-4">
+          <img src="./assets/hero-image.png" alt="Web Developer Image" class="img-fluid">
+        </div>
       </div>
-      <br>
-
-      <h3>
-          Here's what I have accomplished so far
-        </h3>
-        <br>
-        <ul>
-            <li>
-                <a href="https://github.com/rockvan/test">
-                    Click here to visit my website's code page
-                </a>
-                <br>
-                <img src="https://www.kindpng.com/picc/b/128/1280187.png"
-                alt="Github Code Page">
-            </li>
-        </ul>
-        <br>
+    </div>  
+  </section>
+<!--------------------------------END Hero Section-------------------------------->
+<br>
+<!---------------------------------Learned-------------------------------->
+  <section id="learned">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
         
-    <footer>
-      <p>Author: Richard Palo</p>
-      <p>
-        <a href="mailto:rockvan21@gmail.com">
-          rockvan21@gmail.com
-        </a>
-      </p>
-    </footer>
+        <ul class="list-group list-group-horizontal">
 
+          <li class="px-3">
+            <div class="card" style="width: 18rem ; height: 30rem;">
+              <img src="./assets/github.svg" class="card-img-top img-fluid" alt="Github-img">
+              <div class="card-body">
+                <h5 class="card-title">GitHub</h5>
+                <p class="card-text">Click here to visit my website's code page</p>
+                <a href="https://github.com/rockvan/portfolio" class="btn btn-primary d-flex justify-content-center">Visit</a>
+            </div>
+          </li>
+
+          <li class="px-3">
+            <div class="card" style="width: 18rem;height: 30rem;">
+              <img src="./assets/locked-code.svg" class="card-img-top img-fluid" alt="Lockedcode-img">
+              <div class="card-body">
+                <h5 class="card-title">?????</h5>
+                <p class="card-text">???????????????????????????????????????????</p>
+                <a href="https://www.w3schools.com/" class="btn btn-primary d-flex justify-content-center">Visit</a>
+                
+            </div>
+          </li>
+
+        </ul>
+
+          
+
+  
+      </div>
+    </div>
+  </section>
+<!---------------------------------END Learned-------------------------------->
+<br>
+<!--------------------------------Footer-------------------------------->
+<section id="footer">
+  <footer>
+      <div class="contaider-fluid">
+          <div class="row align-items-center card navbar-dark bg-dark ">
+              <div class="card-body">
+                  <h5 class="card-title">Lets Talk</h5>
+                  <p>Wanna get in touch or talk about a project?</p>
+                  <p>Feel free to contact me via email at <a href="mailto:rockvan21@gmail.com" class="badge badge-light"> rockvan21@gmail.com</a></p>
+                  <p>or drop a line in the form at the <a href="contact.html" class="badge badge-light"> Contact page</a></p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</section>
+<!--------------------------------End Footer-------------------------------->
 </body>
 </html>
