@@ -1,112 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-   <link rel="stylesheet" href="stylesheet.css">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<title>Richard Palo - Portfolio</title>
+	</head>
 
-<body>
-<!--------------------------------Navbar--------------------------------->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="https://image.flaticon.com/icons/svg/3176/3176388.svg" width="35" height="35" class="d-inline-block align-top" alt="" loading="lazy">  Richard Palo's portfolio</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </nav>
-<!--------------------------------End Navabar-------------------------------->
-<br>
-<!--------------------------------Hero Section-------------------------------->
-  <section id="hero">
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-4">
-          <h1>
-            Web Developer
-          </h1>
-          <p>
-            Here's what i have learned so far.
-          </p>
-          <ul class="list-group list-group-horizontal-sm">
-            <h4><span class="badge badge-pill badge-info">HTML</span></h4>
-            <h4><span class="badge badge-pill badge-info">CSS</span></h4>
-          </ul>
-        </div>
-        <div class="col-4">
-          <img src="./assets/hero-image.png" alt="Web Developer Image" class="img-fluid">
-        </div>
-      </div>
-    </div>  
-  </section>
-<!--------------------------------END Hero Section-------------------------------->
-<br>
-<!---------------------------------Learned-------------------------------->
-  <section id="learned">
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        
-        <ul class="list-group list-group-horizontal">
+	<body>
+		<!--Hero-->
+		<div id="hero" class="container-fluid bg-dark">
+			<div class="row vh-100">
+				<div class="col align-self-center text-light text-center h1 text-fluid">
+					Hello, I'm
+					<span class="text-danger"> Richard Palo.</span>
+					<br />
+					I'm a full-stack web Developer
+					<br />
+					<a href="#portfolio" class="btn btn-outline-secondary text-white"
+						>Portfolio</a
+					>
+				</div>
+			</div>
+		</div>
+		<!--END Hero-->
 
-          <li class="px-3">
-            <div class="card" style="width: 18rem ; height: 30rem;">
-              <img src="./assets/github.svg" class="card-img-top img-fluid" alt="Github-img">
-              <div class="card-body">
-                <h5 class="card-title">GitHub</h5>
-                <p class="card-text">Click here to visit my website's code page</p>
-                <a href="https://github.com/rockvan/portfolio" class="btn btn-primary d-flex justify-content-center">Visit</a>
-            </div>
-          </li>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-secondary">
+			<a class="navbar-brand" href="index.html">
+				<img
+					src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
+					width="30"
+					height="30"
+					class="d-inline-block align-top"
+					alt="Profile-logo"
+					loading="lazy"
+				/>
+				Richard Palo
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-          <li class="px-3">
-            <div class="card" style="width: 18rem;height: 30rem;">
-              <img src="./assets/locked-code.svg" class="card-img-top img-fluid" alt="Lockedcode-img">
-              <div class="card-body">
-                <h5 class="card-title">?????</h5>
-                <p class="card-text">???????????????????????????????????????????</p>
-                <a href="https://www.w3schools.com/" class="btn btn-primary d-flex justify-content-center">Visit</a>
-                
-            </div>
-          </li>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#portfolio"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
 
-        </ul>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html"
+							>About <span class="sr-only">(current)</span></a
+						>
+					</li>
 
-          
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html"
+							>Contact <span class="sr-only">(current)</span></a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navbar -->
 
-  
-      </div>
-    </div>
-  </section>
-<!---------------------------------END Learned-------------------------------->
-<br>
-<!--------------------------------Footer-------------------------------->
-<section id="footer">
-  <footer>
-      <div class="contaider-fluid">
-          <div class="row align-items-center card navbar-dark bg-dark ">
-              <div class="card-body">
-                  <h5 class="card-title">Lets Talk</h5>
-                  <p>Wanna get in touch or talk about a project?</p>
-                  <p>Feel free to contact me via email at <a href="mailto:rockvan21@gmail.com" class="badge badge-light"> rockvan21@gmail.com</a></p>
-                  <p>or drop a line in the form at the <a href="contact.html" class="badge badge-light"> Contact page</a></p>
-              </div>
-          </div>
-      </div>
-  </footer>
-</section>
-<!--------------------------------End Footer-------------------------------->
-</body>
+		<!--Portfolio-->
+		<div id="portfolio" class="container-fluid bg-dark">
+			<div class="row vh-100">
+				<div class="col align-self-center text-light text-center h1">
+					Here's what I've learned so far..
+					<br />
+					<h3>
+						<span class="badge badge-pill badge-success">HTML</span>
+						<span class="badge badge-pill badge-success">CSS</span>
+						<span class="badge badge-pill badge-success">Bootstrap</span>
+					</h3>
+				</div>
+
+				<div class="col align-self-center">
+					<img
+						src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+						class="img-fluid"
+						alt="coding image"
+					/>
+				</div>
+			</div>
+		</div>
+		<!--Cards-->
+		<div class="container-fluid bg-dark">
+			<div class="row justify-content-center">
+				<div class="card-deck">
+					<div class="card" style="width: 18rem;">
+						<img
+							src="assets/github.svg"
+							class="card-img-top"
+							alt="GitHub-img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">GitHub</h5>
+							<p class="card-text">
+								Click here to visit my website's code page.
+							</p>
+							<a
+								href="https://github.com/rockvan/portfolio"
+								class="btn btn-primary"
+								>Visit</a
+							>
+						</div>
+					</div>
+
+					<div class="card" style="width: 18rem;">
+						<img
+							src="assets/locked-code.svg"
+							class="card-img-top"
+							alt="locked-code-img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">??????</h5>
+							<p class="card-text">
+								?????????????????????????????????????????????????????
+							</p>
+							<a href="#" class="btn btn-primary disabled">Locked</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+		</div>
+		<!--Cards-->
+		<!--End Portfolio-->
+
+		<!--Footer-->
+		<div class="container-fluid bg-dark">
+			<div class="row">
+				<div class="col text-center text-white card bg-secondary">
+					<br />
+					<h4>Lets talk</h4>
+					<p>
+						Wanna get in touch or talk about a project?
+						<br />
+						Feel free to contact me via email at
+						<span
+							><a href="mailto:rockvan21@gmail.com" class="badge badge-info">
+								rockvan21@gmail.com</a
+							></span
+						>
+						<br />
+						or drop a line in the form at the
+						<span
+							><a href="contact.html" class="badge badge-info">
+								Contact Page</a
+							></span
+						>
+					</p>
+					<br />
+				</div>
+			</div>
+		</div>
+		<!--End Footer-->
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
