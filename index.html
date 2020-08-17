@@ -2,188 +2,182 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1,shrink-to-fit=no"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-			crossorigin="anonymous"/>
+			crossorigin="anonymous"
+		/>
+		<!-- End Bootstrap CSS -->
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="stylesheet.css" />
+		<!-- END Stylesheet-->
 
-		<title>Richard Palo - Portfolio</title>
+		<title>Richard Palo - Home</title>
 	</head>
 
 	<body>
 		<div class="container-fluid bg-dark">
-			<!--Hero-->
-			<div class="row vh-100">
-				<div class="col align-self-center text-light text-center h1 text-fluid">
-					Hello, I'm
-					<span class="text-danger"> Richard Palo.</span>
-					<br>
-					I'm a full-stack web Developer
-					<br>
-					<a href="#portfolio" class="btn btn-outline-secondary text-white"
-						>View My Portfolio
-					</a>
+			<!--Landing-->
+			<div class="row vh-100 bg-dark text-white">
+				<div class="col text-center align-self-center position-fixed">
+					<h1>
+						Hello I'm <span class="text-danger">Richard Palo.</span>
+						<br />
+						I'm a full-stack web Developer
+					</h1>
+					<br />
+					<a href="#portfolio" class="btn btn-outline-secondary"
+						>View My Portfolio</a
+					>
 				</div>
 			</div>
-			<!--END Hero-->
-
-			<!-- Navbar -->
-			<nav class="container navbar navbar-expand-lg sticky-top navbar-dark">
-				<a class="navbar-brand" href="index.html">
-					<img
-						src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
-						width="30"
-						height="30"
-						class="d-inline-block align-top"
-						alt="Profile-logo"
-						loading="lazy"
-					/>
-					Richard Palo
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
+			<!--END Landing-->
+			<!--Navbar-->
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img
+							src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
+							width="30"
+							height="30"
+							class="d-inline-block align-top"
+							alt="Logo"
+							loading="lazy"
+						/>
+						Richard Palo</a
+					>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNavAltMarkup"
+						aria-controls="navbarNavAltMarkup"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarNavAltMarkup"
+					>
+						<div class="navbar-nav">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="index.html#portfolio"
+								>Home</a
+							>
+							<a class="nav-link" href="about.html">About</a>
+							<a class="nav-link" href="contact.html">Contact</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!--End Navbar-->
+			<!--Portfolio-->
+			<div class="row vh-100 bg-dark text-white bg-image" id="portfolio">
+				<div
+					class="col d-flex align-items-center flex-column justify-content-center"
 				>
-					<span 
-						class="navbar-toggler-icon">
-
-					</span>
-				</button>
-			
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html#portfolio">
-							Home <span class="sr-only">(current)</span>
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">
-							About <span class="sr-only">(current)</span>
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">
-							Contact <span class="sr-only">(current)</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		
-			<!-- End Navbar -->
-
-		<!--Portfolio-->
-		<div id="portfolio" class="container-fluid bg-dark">
-			<div class="row vh-100">
-				<div class="col align-self-center text-light text-center h1">
-					Here's what I've learned so far..
-					<br />
+					<h1>
+						Here's what I've learned so far..
+					</h1>
 					<h3>
-						<span class="badge badge-pill badge-success">HTML</span>
-						<span class="badge badge-pill badge-success">CSS</span>
-						<span class="badge badge-pill badge-success">Bootstrap</span>
+						<span class="badge rounded-pill bg-success">HTML</span>
+						<span class="badge rounded-pill bg-success">CSS</span>
+						<span class="badge rounded-pill bg-success">Bootstrap</span>
 					</h3>
-				</div>
+					<br />
+					<br />
+					<br />
+					<div class="card-deck">
+						<div class="card bg-dark h-100" style="width: 18rem;">
+							<img
+								src="assets/github.svg"
+								class="card-img-top"
+								alt="GitHub-img"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">GitHub</h5>
+								<p class="card-text">
+									Click here to visit my website's code page.
+								</p>
+								<a
+									href="https://github.com/rockvan/portfolio"
+									target="_blank"
+									class="btn btn-outline-primary d-flex justify-content-center"
+									>Visit</a
+								>
+							</div>
+						</div>
 
-				<div class="col align-self-center">
-					<img
-						src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-						class="img-fluid"
-						alt="coding image"
-					/>
-				</div>
-			</div>
-			
-			<!--Cards-->
-			<div class="row justify-content-center">
-				<div class="card-deck">
-					<div class="card" style="width: 18rem;">
-						<img
-							src="assets/github.svg"
-							class="card-img-top"
-							alt="GitHub-img"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">GitHub</h5>
-							<p class="card-text">
-								Click here to visit my website's code page.
-							</p>
-							<a
-								href="https://github.com/rockvan/portfolio"
-								target="_blank"
-								class="btn btn-primary"
-								>Visit
-							</a>
+						<div class="card bg-dark h-100" style="width: 18rem;">
+							<img
+								src="assets/locked-code.svg"
+								class="card-img-top"
+								alt="locked-code-img"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">JavaScript</h5>
+
+								<div class="progress">
+									<div
+										class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+										role="progressbar"
+										aria-valuenow="75"
+										aria-valuemin="0"
+										aria-valuemax="100"
+										style="width: 30%;"
+									>
+										UPDATING...
+									</div>
+								</div>
+								<br />
+								<br />
+								<a
+									href="index.html#portfolio"
+									class="btn btn-outline-primary d-flex justify-content-center"
+									>Test</a
+								>
+							</div>
 						</div>
 					</div>
-
-					<div class="card" style="width: 18rem;">
-						<img
-							src="assets/locked-code.svg"
-							class="card-img-top"
-							alt="locked-code-img"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">??????</h5>
-							<p class="card-text">
-								?????????????????????????????????????????????????????
-							</p>
-							<a href="#" class="btn btn-primary disabled">Locked</a>
-						</div>
-					</div>
 				</div>
 			</div>
-			<br />
-			<br />
-			<br />
-			<br />
-			<!--Cards-->
-		<!--End Portfolio-->
-
+			<!--End Portfolio-->
 			<!--Footer-->
-			<div class="row">
-				<div class="col text-center text-white card bg-secondary">
-					<br />
-					<h4>Lets talk</h4>
-					<p>
+			<div class="row text-white fixed-bottom bg-dark" style="height: 100px;">
+				<div
+					class="container-fluid d-flex justify-content-center align-self-center text text-center"
+				>
+					<div class="col">
 						Wanna get in touch or talk about a project?
-						<br />
+					</div>
+
+					<div class="col">
 						Feel free to contact me via email at
-						<span>
-							<a
-								href="mailto:rockvan21@gmail.com"
-								target="_blank"
-								class="badge badge-info"
-							>rockvan21@gmail.com</a>
-						</span>
-						<br />
+						<span
+							><a href="mailto:rockvan21@gmail.com" class="badge badge-info">
+								rockvan21@gmail.com</a
+							></span
+						>
+					</div>
+					<div class="col">
 						or drop a line in the form at the
-						<span>
-							<a href="contact.html" class="badge badge-info">
-								Contact Page
-							</a>
-							</span>
-					</p>
-					<br />
+						<span
+							><a href="contact.html" class="badge badge-info">
+								Contact Page</a
+							></span
+						>
+					</div>
 				</div>
 			</div>
+			<!--End Footer-->
 		</div>
-		<!--End Footer-->
-
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
