@@ -11,6 +11,7 @@
 			crossorigin="anonymous"
 		/>
 		<!-- End Bootstrap CSS -->
+
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="stylesheet.css" />
 		<!-- END Stylesheet-->
@@ -21,81 +22,93 @@
 	<body>
 		<div class="container-fluid bg-dark">
 			<!--Landing-->
-			<div class="row vh-100 bg-dark text-white">
-				<div class="col text-center align-self-center position-fixed">
-					<h1>
-						Hello I'm <span class="text-danger">Richard Palo.</span>
-						<br />
-						I'm a full-stack web Developer
-					</h1>
-					<br />
-					<a href="#portfolio" class="btn btn-outline-secondary"
-						>View My Portfolio</a
-					>
-				</div>
-			</div>
-			<!--END Landing-->
-			<!--Navbar-->
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-				<div class="container">
-					<a class="navbar-brand" href="index.html">
-						<img
-							src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
-							width="30"
-							height="30"
-							class="d-inline-block align-top"
-							alt="Logo"
-							loading="lazy"
-						/>
-						Richard Palo</a
-					>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="navbarNavAltMarkup"
-					>
-						<div class="navbar-nav">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="index.html#portfolio"
-								>Home</a
-							>
-							<a class="nav-link" href="about.html">About</a>
-							<a class="nav-link" href="contact.html">Contact</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!--End Navbar-->
-			<!--Portfolio-->
-			<div class="row vh-100 bg-dark text-white bg-image" id="portfolio">
+			<div class="row vh-100 m-auto text-white">
 				<div
-					class="col d-flex align-items-center flex-column justify-content-center"
+					class="col text-center d-flex justify-content-center align-items-center"
 				>
 					<h1>
-						Here's what I've learned so far..
+						Hello I'm <span class="text-danger">Richard Palo</span>.
+						<br />
+						I'm a full-stack web Developer
+						<br />
+						<a class="btn btn-outline-secondary" href="#portfolio" role="button"
+							><strong
+								>View my Portfolio <i class="fas fa-arrow-down"></i></strong
+						></a>
 					</h1>
-					<h3>
-						<span class="badge rounded-pill bg-success">HTML</span>
-						<span class="badge rounded-pill bg-success">CSS</span>
-						<span class="badge rounded-pill bg-success">Bootstrap</span>
-					</h3>
-					<br />
-					<br />
-					<br />
+				</div>
+			</div>
+		</div>
+		<!--END Landing-->
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img
+						src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
+						width="30"
+						height="30"
+						class="d-inline-block align-top"
+						alt="Logo"
+						loading="lazy"
+					/>
+					Richard Palo</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNavAltMarkup"
+				>
+					<div class="navbar-nav">
+						<a
+							class="nav-link active"
+							aria-current="page"
+							href="index.html#portfolio"
+							>Home</a
+						>
+						<a class="nav-link" href="about.html">About</a>
+						<a class="nav-link" href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--End Navbar-->
+		<!--Portfolio-->
+		<div class="container-fluid bg-dark">
+			<div
+				class="row vh-100 m-auto text-white text-center bg-image"
+				id="portfolio"
+			>
+				<div
+					class="col-md-12 col-lg-12 d-flex justify-content-center align-items-end"
+				>
+					<h1>
+						Here's What I've Learned So far..
+						<br />
+						<i class="fab fa-html5 badge rounded-pill bg-primary"> HTML </i>
+						<i class="fab fa-css3 badge rounded-pill bg-primary"> CSS </i>
+						<i class="fab fa-bootstrap badge rounded-pill bg-primary">
+							Bootstrap
+						</i>
+					</h1>
+				</div>
+				<!--Cards-->
+				<div
+					class="col-md-12 col-lg-12 d-flex justify-content-center align-items-center"
+				>
 					<div class="card-deck">
-						<div class="card bg-dark h-100" style="width: 18rem;">
+						<div class="card bg-dark" style="width: 18rem;">
 							<img
 								src="assets/github.svg"
 								class="card-img-top"
@@ -109,13 +122,13 @@
 								<a
 									href="https://github.com/rockvan/portfolio"
 									target="_blank"
-									class="btn btn-outline-primary d-flex justify-content-center"
+									class="btn btn-outline-primary stretched-link"
 									>Visit</a
 								>
 							</div>
 						</div>
 
-						<div class="card bg-dark h-100" style="width: 18rem;">
+						<div class="card bg-dark" style="width: 18rem;">
 							<img
 								src="assets/locked-code.svg"
 								class="card-img-top"
@@ -124,7 +137,7 @@
 							<div class="card-body">
 								<h5 class="card-title">JavaScript</h5>
 
-								<div class="progress">
+								<div class="progress" id="jscript">
 									<div
 										class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
 										role="progressbar"
@@ -139,45 +152,53 @@
 								<br />
 								<br />
 								<a
+									id="btn"
 									href="index.html#portfolio"
-									class="btn btn-outline-primary d-flex justify-content-center"
+									class="btn btn-outline-primary stretched-link"
 									>Test</a
 								>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!--End Cards-->
 			</div>
-			<!--End Portfolio-->
-			<!--Footer-->
-			<div class="row text-white fixed-bottom bg-dark" style="height: 100px;">
-				<div
-					class="container-fluid d-flex justify-content-center align-self-center text text-center"
-				>
-					<div class="col">
-						Wanna get in touch or talk about a project?
-					</div>
+		</div>
+		<!--End Portfolio-->
+		<!--Footer-->
 
-					<div class="col">
-						Feel free to contact me via email at
-						<span
-							><a href="mailto:rockvan21@gmail.com" class="badge badge-info">
-								rockvan21@gmail.com</a
-							></span
-						>
+		<footer>
+			<div class="container-fluid bg-dark text-white">
+				<div class="row p-2">
+					<div class="col-md d-flex justify-content-center align-items-center">
+						<h5>Wanna get in touch or talk about a project?</h5>
 					</div>
-					<div class="col">
-						or drop a line in the form at the
-						<span
-							><a href="contact.html" class="badge badge-info">
-								Contact Page</a
-							></span
-						>
+					<div class="col-md d-flex justify-content-center align-items-center">
+						<h5>
+							Feel free to contact me via email at
+							<span
+								><a href="mailto:rockvan21@gmail.com" class="badge badge-info">
+									rockvan21@gmail.com</a
+								></span
+							>
+						</h5>
+					</div>
+					<div class="col-md d-flex justify-content-center align-items-center">
+						<h5>
+							or drop a line in the form at the
+							<span
+								><a href="contact.html" class="badge badge-info">
+									Contact Page</a
+								></span
+							>
+						</h5>
 					</div>
 				</div>
 			</div>
-			<!--End Footer-->
-		</div>
+		</footer>
+
+		<!--End Footer-->
+
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -194,5 +215,12 @@
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"
 		></script>
+		<!-- Font Awsome -->
+		<script
+			src="https://kit.fontawesome.com/cc265c7c5e.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- End Font Awsome-->
+		<script src="index.js"></script>
 	</body>
 </html>

@@ -19,51 +19,49 @@
 	</head>
 
 	<body>
-		<div class="container-fluid bg-dark">
-			<!--Navbar-->
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-				<div class="container">
-					<a class="navbar-brand" href="index.html">
-						<img
-							src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
-							width="30"
-							height="30"
-							class="d-inline-block align-top"
-							alt="Logo"
-							loading="lazy"
-						/>
-						Richard Palo</a
-					>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarNavAltMarkup"
-						aria-controls="navbarNavAltMarkup"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="navbarNavAltMarkup"
-					>
-						<div class="navbar-nav">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="index.html#portfolio"
-								>Home</a
-							>
-							<a class="nav-link" href="about.html">About</a>
-							<a class="nav-link" href="contact.html">Contact</a>
-						</div>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img
+						src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
+						width="30"
+						height="30"
+						class="d-inline-block align-top"
+						alt="Logo"
+						loading="lazy"
+					/>
+					Richard Palo</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNavAltMarkup"
+				>
+					<div class="navbar-nav">
+						<a class="nav-link" aria-current="page" href="index.html#portfolio"
+							>Home</a
+						>
+						<a class="nav-link active" href="about.html">About</a>
+						<a class="nav-link" href="contact.html">Contact</a>
 					</div>
 				</div>
-			</nav>
-			<!--End Navbar-->
-			<!--About-->
+			</div>
+		</nav>
+		<!--End Navbar-->
+
+		<!--About-->
+		<div class="container-fluid bg-dark">
 			<div class="row vh-100 bg-dark">
 				<div
 					class="col d-flex align-items-center justify-content-center flex-column bg-about"
@@ -94,37 +92,39 @@
 					</div>
 				</div>
 			</div>
-
-			<!--End About-->
-			<!--Footer-->
-			<div class="row text-white fixed-bottom bg-dark" style="height: 100px;">
-				<div
-					class="container-fluid d-flex justify-content-center align-self-center text text-center"
-				>
-					<div class="col">
-						Wanna get in touch or talk about a project?
+		</div>
+		<!--End About-->
+		<!--Footer-->
+		<footer>
+			<div class="container-fluid bg-dark text-white">
+				<div class="row p-2">
+					<div class="col-md d-flex justify-content-center align-items-center">
+						<h5>Wanna get in touch or talk about a project?</h5>
 					</div>
-
-					<div class="col">
-						Feel free to contact me via email at
-						<span
-							><a href="mailto:rockvan21@gmail.com" class="badge badge-info">
-								rockvan21@gmail.com</a
-							></span
-						>
+					<div class="col-md d-flex justify-content-center align-items-center">
+						<h5>
+							Feel free to contact me via email at
+							<span
+								><a href="mailto:rockvan21@gmail.com" class="badge badge-info">
+									rockvan21@gmail.com</a
+								></span
+							>
+						</h5>
 					</div>
-					<div class="col">
-						or drop a line in the form at the
-						<span
-							><a href="contact.html" class="badge badge-info">
-								Contact Page</a
-							></span
-						>
+					<div class="col-md d-flex justify-content-center align-items-center">
+						<h5>
+							or drop a line in the form at the
+							<span
+								><a href="contact.html" class="badge badge-info">
+									Contact Page</a
+								></span
+							>
+						</h5>
 					</div>
 				</div>
 			</div>
-			<!--End Footer-->
-		</div>
+		</footer>
+		<!--End Footer-->
 
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
