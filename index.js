@@ -1,7 +1,3 @@
-document.getElementById('btn').onclick = function () {
-	classchange();
-};
-
-function classchange() {
-	(document.getElementById('jscard').classList.toggle = 'bg-dark'), 'bg-light';
-}
+document.getElementById('jscard'.onclick = function() {
+	.classList.remove("bg-dark")
+)};
