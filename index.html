@@ -85,11 +85,8 @@
 
 		<!--End Navbar-->
 		<!--Portfolio-->
-		<div class="container-fluid bg-dark">
-			<div
-				class="row vh-100 m-auto text-white text-center bg-image"
-				id="portfolio"
-			>
+		<div class="container-fluid bg-dark bg-image">
+			<div class="row vh-100 m-auto text-white text-center" id="portfolio">
 				<div
 					class="col-md-12 col-lg-12 d-flex justify-content-center align-items-end"
 				>
@@ -120,6 +117,7 @@
 									Click here to visit my website's code page.
 								</p>
 								<a
+									id="btn"
 									href="https://github.com/rockvan/portfolio"
 									target="_blank"
 									class="btn btn-outline-primary stretched-link"
@@ -128,7 +126,7 @@
 							</div>
 						</div>
 
-						<div class="card bg-dark" style="width: 18rem;">
+						<div id="jscard" class="card bg-dark" style="width: 18rem;">
 							<img
 								src="assets/locked-code.svg"
 								class="card-img-top"
@@ -137,7 +135,7 @@
 							<div class="card-body">
 								<h5 class="card-title">JavaScript</h5>
 
-								<div class="progress" id="jscript">
+								<div class="progress">
 									<div
 										class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
 										role="progressbar"
@@ -152,7 +150,6 @@
 								<br />
 								<br />
 								<a
-									id="btn"
 									href="index.html#portfolio"
 									class="btn btn-outline-primary stretched-link"
 									>Test</a
@@ -170,10 +167,14 @@
 		<footer>
 			<div class="container-fluid bg-dark text-white">
 				<div class="row p-2">
-					<div class="col-md d-flex justify-content-center align-items-center">
+					<div
+						class="col-md d-flex text-center justify-content-center align-items-center"
+					>
 						<h5>Wanna get in touch or talk about a project?</h5>
 					</div>
-					<div class="col-md d-flex justify-content-center align-items-center">
+					<div
+						class="col-md d-flex text-center justify-content-center align-items-center"
+					>
 						<h5>
 							Feel free to contact me via email at
 							<span
@@ -183,7 +184,9 @@
 							>
 						</h5>
 					</div>
-					<div class="col-md d-flex justify-content-center align-items-center">
+					<div
+						class="col-md d-flex text-center justify-content-center align-items-center"
+					>
 						<h5>
 							or drop a line in the form at the
 							<span

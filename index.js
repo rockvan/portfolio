@@ -1,5 +1,7 @@
-document.getElementById('jscript').addEventListener('click', background);
+document.getElementById('btn').onclick = function () {
+	classchange();
+};
 
-function btn() {
-	document.getElementById('btn').class = bg - danger();
+function classchange() {
+	(document.getElementById('jscard').classList.toggle = 'bg-dark'), 'bg-light';
 }
