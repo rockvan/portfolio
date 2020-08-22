@@ -1,3 +1,8 @@
+/** HTML **/
+html {
+	scroll-behavior: smooth;
+}
+
 /** HOME **/
 .bg-image {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -6,6 +11,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	height: auto;
+	position: relative;
 }
 /** HOME **/
 

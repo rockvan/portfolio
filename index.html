@@ -11,6 +11,12 @@
 			crossorigin="anonymous"
 		/>
 		<!-- End Bootstrap CSS -->
+		<!-- Animation CSS-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+		/>
+		<!--End Animation CSS-->
 
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="stylesheet.css" />
@@ -20,7 +26,7 @@
 	</head>
 
 	<body>
-		<div class="container-fluid bg-dark">
+		<div id="landing" class="container-fluid bg-dark">
 			<!--Landing-->
 			<div class="row vh-100 m-auto text-white">
 				<div
@@ -43,7 +49,7 @@
 		<!--Navbar-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="#landing">
 					<img
 						src="https://image.flaticon.com/icons/svg/3176/3176388.svg"
 						width="30"
@@ -98,6 +104,7 @@
 						<i class="fab fa-bootstrap badge rounded-pill bg-primary">
 							Bootstrap
 						</i>
+						<i id="badge" class=""></i>
 					</h1>
 				</div>
 				<!--Cards-->
@@ -111,13 +118,12 @@
 								class="card-img-top"
 								alt="GitHub-img"
 							/>
-							<div class="card-body">
+							<div class="card-body d-flex justify-content-between flex-column">
 								<h5 class="card-title">GitHub</h5>
 								<p class="card-text">
 									Click here to visit my website's code page.
 								</p>
 								<a
-									id="btn"
 									href="https://github.com/rockvan/portfolio"
 									target="_blank"
 									class="btn btn-outline-primary stretched-link"
@@ -132,11 +138,13 @@
 								class="card-img-top"
 								alt="locked-code-img"
 							/>
-							<div class="card-body">
+							<div class="card-body d-flex justify-content-between flex-column">
 								<h5 class="card-title">JavaScript</h5>
+								<p id="jspara" class="card-text"></p>
 
 								<div class="progress">
 									<div
+										id="jsbar"
 										class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
 										role="progressbar"
 										aria-valuenow="75"
@@ -144,12 +152,13 @@
 										aria-valuemax="100"
 										style="width: 30%;"
 									>
-										UPDATING...
+										Learning...
 									</div>
 								</div>
 								<br />
 								<br />
 								<a
+									id="btn"
 									href="index.html#portfolio"
 									class="btn btn-outline-primary stretched-link"
 									>Test</a
@@ -163,9 +172,8 @@
 		</div>
 		<!--End Portfolio-->
 		<!--Footer-->
-
 		<footer>
-			<div class="container-fluid bg-dark text-white">
+			<div class="container-fluid bg-dark text-white position-relative">
 				<div class="row p-2">
 					<div
 						class="col-md d-flex text-center justify-content-center align-items-center"
@@ -199,7 +207,6 @@
 				</div>
 			</div>
 		</footer>
-
 		<!--End Footer-->
 
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -224,6 +231,6 @@
 			crossorigin="anonymous"
 		></script>
 		<!-- End Font Awsome-->
-		<script src="index.js"></script>
+		<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>
