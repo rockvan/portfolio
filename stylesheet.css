@@ -10,7 +10,7 @@ html {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: auto;
+	height: 100%;
 	position: relative;
 }
 /** HOME **/
@@ -24,7 +24,6 @@ html {
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 	height: auto;
-	position: relative;
 }
 
 .bg-card-about {
